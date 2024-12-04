@@ -1,4 +1,6 @@
-﻿namespace ET.Client
+﻿using System.Diagnostics;
+
+namespace ET.Client
 {
 	[MessageHandler(SceneType.StateSync)]
 	public class M2C_CreateMyUnitHandler: MessageHandler<Scene, M2C_CreateMyUnit>
@@ -7,6 +9,13 @@
 		{
 			// 通知场景切换协程继续往下走
 			root.GetComponent<ObjectWait>().Notify(new Wait_CreateMyUnit() {Message = message});
+			
+			Log.Console("asdfsdaf");
+
+			C2G_FirstProto msg = C2G_FirstProto.Create();
+			msg.Key = 1;
+			root.GetComponent<ClientSenderComponent>().Send(msg);
+			
 			await ETTask.CompletedTask;
 		}
 	}

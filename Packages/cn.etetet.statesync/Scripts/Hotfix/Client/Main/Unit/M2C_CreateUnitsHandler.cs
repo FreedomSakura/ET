@@ -16,6 +16,8 @@
 				}
 				Unit unit = UnitFactory.Create(currentScene, unitInfo);
 			}
+			
+			
 			await ETTask.CompletedTask;
 		}
 	}
