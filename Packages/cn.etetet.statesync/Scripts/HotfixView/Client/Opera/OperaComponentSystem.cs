@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace ET.Client
 {
@@ -9,6 +10,10 @@ namespace ET.Client
         private static void Awake(this OperaComponent self)
         {
             self.mapMask = LayerMask.GetMask("Map");
+
+            var global = self.Root().GetComponent<GlobalComponent>();
+            var playerInput = global.InputController.GetComponent<PlayerInput>();
+            
         }
 
         [EntitySystem]
