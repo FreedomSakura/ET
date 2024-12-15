@@ -41,6 +41,14 @@
         "cn.etetet.memorypack": "1.10.0"
       }
     },
+    "cn.etetet.db": {
+      "version": "file:cn.etetet.db",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.core": "2.0.8"
+      }
+    },
     "cn.etetet.demores": {
       "version": "file:cn.etetet.demores",
       "depth": 0,
@@ -220,6 +228,14 @@
       "source": "embedded",
       "dependencies": {
         "cn.etetet.core": "2.0.0"
+      }
+    },
+    "cn.etetet.unitcache": {
+      "version": "file:cn.etetet.unitcache",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.db": "1.0.0"
       }
     },
     "cn.etetet.watcher": {

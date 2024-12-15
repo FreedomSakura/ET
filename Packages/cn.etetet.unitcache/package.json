@@ -1,0 +1,18 @@
+{
+  "name": "cn.etetet.unitcache",
+  "displayName": "ET.UnitCache",
+  "version": "0.0.0",
+  "unity": "2022.3",
+  "description": "\u7f13\u5b58\u670d",
+  "author": {
+    "name": "Ayesha"
+  },
+  "repository": {},
+  "relatedPackages": {},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@ET-Packages"
+  },
+  "dependencies": {
+    "cn.etetet.db": "1.0.0"
+  }
+}

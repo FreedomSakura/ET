@@ -51,5 +51,10 @@
     <ItemGroup>
         <CompilerVisibleProperty Include="DotNetAssembly" />
     </ItemGroup>
+    <ItemGroup>
+      <None Include="..\..\..\cn.etetet.unitcache\Scripts\Hotfix\Server\AssemblyReference.asmref">
+        <Link>cn.etetet.unitcache\Scripts\Hotfix\Server\AssemblyReference.asmref</Link>
+      </None>
+    </ItemGroup>
 
 </Project>

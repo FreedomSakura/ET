@@ -12,6 +12,7 @@
         "ET.ReferenceCollector",
         "ET.SourceGeneratorAttribute",
         "ET.UI",
+        "ET.UnitCache",
         "ET.YIUIFramework",
         "ET.YooAssets",
         "Unity.Mathematics",

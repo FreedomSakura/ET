@@ -9,10 +9,12 @@
         "ET.ReferenceCollector",
         "ET.SourceGeneratorAttribute",
         "ET.UI",
+        "ET.UnitCache",
         "ET.YIUIFramework",
         "ET.YooAssets",
         "Unity.Mathematics",
-        "Unity.TextMeshPro"
+        "Unity.TextMeshPro",
+        "Unity.InputSystem"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -25,8 +27,5 @@
         "IS_COMPILING || UNITY_EDITOR"
     ],
     "versionDefines": [],
-    "noEngineReferences": false,
-    "optionalUnityReferences": [],
-    "additionalReferences": [],
-    "compilerOptions": ""
+    "noEngineReferences": false
 }

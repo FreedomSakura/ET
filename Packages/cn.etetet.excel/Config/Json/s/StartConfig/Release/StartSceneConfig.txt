@@ -10,4 +10,5 @@
 [303, {"_t":"StartSceneConfig","_id":303,"Process":8,"Zone":3,"SceneType":"Location","Name":"Location","Port":0}],
 [304, {"_t":"StartSceneConfig","_id":304,"Process":9,"Zone":3,"SceneType":"Map","Name":"Map1","Port":0}],
 [305, {"_t":"StartSceneConfig","_id":305,"Process":10,"Zone":3,"SceneType":"Map","Name":"Map2","Port":0}],
+[306, {"_t":"StartSceneConfig","_id":306,"Process":1,"Zone":1,"SceneType":"UnitCache","Name":"UnitCache","Port":0}],
 ]}

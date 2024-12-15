@@ -43,6 +43,8 @@ MonoBehaviour:
     Version: 
   - Name: cn.etetet.watcher
     Version: 2.0.0
+  - Name: cn.etetet.unitcache
+    Version: 
   - Name: cn.etetet.unit
     Version: 2.0.0
   - Name: cn.etetet.ui
@@ -81,6 +83,8 @@ MonoBehaviour:
     Version: 2.0.0
   - Name: cn.etetet.demores
     Version: 0.0.2
+  - Name: cn.etetet.db
+    Version: 1.0.0
   - Name: cn.etetet.core
     Version: 2.0.8
   - Name: cn.etetet.console
@@ -172,5 +176,5 @@ MonoBehaviour:
   - Name: cn.etetet.packagemanager
     Version: 1.0.2
   BanPackageInfo: []
-  LastUpdateTime: 1733408029
+  LastUpdateTime: 1733852775
   UpdateInterval: 3600
