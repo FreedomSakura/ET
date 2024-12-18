@@ -155,6 +155,8 @@ MonoBehaviour:
     Version: 4.0.0-pre.2
   - Name: com.unity.render-pipelines.universal
     Version: 14.0.9
+  - Name: com.unity.inputsystem
+    Version: 1.11.2
   - Name: com.unity.ide.vscode
     Version: 1.2.5
   - Name: com.unity.ide.visualstudio
@@ -170,5 +172,5 @@ MonoBehaviour:
   - Name: cn.etetet.packagemanager
     Version: 1.0.2
   BanPackageInfo: []
-  LastUpdateTime: 1733059826
+  LastUpdateTime: 1733408029
   UpdateInterval: 3600

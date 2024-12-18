@@ -9,5 +9,6 @@
     <assembly fullname="mscorlib" preserve="all" />
     <assembly fullname="UnityEngine.AssetBundleModule" preserve="all" />
     <assembly fullname="UnityEngine.CoreModule" preserve="all" />
-    <assembly fullname="UnityEngine.InputLegacyModule" preserve="all" />
+<!--    <assembly fullname="UnityEngine.InputLegacyModule" preserve="all" />-->
+    <assembly fullname="UnityEngine.InputModule" preserve="all" />
 </linker>
