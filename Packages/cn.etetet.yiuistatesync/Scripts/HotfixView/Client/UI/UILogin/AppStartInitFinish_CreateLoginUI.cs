@@ -1,4 +1,6 @@
 
+using UnityEngine;
+
 namespace ET.Client
 {
 	[Event(SceneType.StateSync)]
@@ -7,6 +9,7 @@ namespace ET.Client
 		protected override async ETTask Run(Scene root, AppStartInitFinish args)
 		{
 			await YIUIMgrComponent.Inst.Root.OpenPanelAsync<LoginPanelComponent>();
+			//await YIUIMgrComponent.Inst.Root.OpenPanelAsync<TestUIPanelComponent>();
 		}
 	}
 }

@@ -21,7 +21,7 @@ namespace ET.Client
                 Log.Error("初始化UI失败");
                 return;
             }
-
+            
             await EventSystem.Instance.PublishAsync(root, new AppStartInitFinish());
         }
     }

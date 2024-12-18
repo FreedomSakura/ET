@@ -6,7 +6,8 @@
         "ET.YooAssets",
         "ET.Core.Editor",
         "ET.Loader",
-        "ET.Init.Editor"
+        "ET.Init.Editor",
+        "ET.YIUIFramework.Editor"
     ],
     "includePlatforms": [
         "Editor"

@@ -310,6 +310,76 @@ namespace ET
         }
     }
 
+    [MemoryPackable]
+    [Message(LoginOuter.C2G_FirstProto)]
+    [ResponseType(nameof(G2C_FirstProto))]
+    public partial class C2G_FirstProto : MessageObject, ISessionRequest
+    {
+        public static C2G_FirstProto Create(bool isFromPool = false)
+        {
+            return ObjectPool.Fetch<C2G_FirstProto>(isFromPool);
+        }
+
+        [MemoryPackOrder(0)]
+        public int RpcId { get; set; }
+
+        /// <summary>
+        /// 帐号
+        /// </summary>
+        [MemoryPackOrder(1)]
+        public long Key { get; set; }
+
+        public override void Dispose()
+        {
+            if (!this.IsFromPool)
+            {
+                return;
+            }
+
+            this.RpcId = default;
+            this.Key = default;
+
+            ObjectPool.Recycle(this);
+        }
+    }
+
+    [MemoryPackable]
+    [Message(LoginOuter.G2C_FirstProto)]
+    public partial class G2C_FirstProto : MessageObject, ISessionResponse
+    {
+        public static G2C_FirstProto Create(bool isFromPool = false)
+        {
+            return ObjectPool.Fetch<G2C_FirstProto>(isFromPool);
+        }
+
+        [MemoryPackOrder(0)]
+        public int RpcId { get; set; }
+
+        [MemoryPackOrder(1)]
+        public int Error { get; set; }
+
+        [MemoryPackOrder(2)]
+        public string Message { get; set; }
+
+        [MemoryPackOrder(3)]
+        public long PlayerId { get; set; }
+
+        public override void Dispose()
+        {
+            if (!this.IsFromPool)
+            {
+                return;
+            }
+
+            this.RpcId = default;
+            this.Error = default;
+            this.Message = default;
+            this.PlayerId = default;
+
+            ObjectPool.Recycle(this);
+        }
+    }
+
     public static class LoginOuter
     {
         public const ushort Main2NetClient_Login = 1001;
@@ -320,5 +390,7 @@ namespace ET
         public const ushort R2C_Login = 1006;
         public const ushort C2G_LoginGate = 1007;
         public const ushort G2C_LoginGate = 1008;
+        public const ushort C2G_FirstProto = 1009;
+        public const ushort G2C_FirstProto = 1010;
     }
 }
