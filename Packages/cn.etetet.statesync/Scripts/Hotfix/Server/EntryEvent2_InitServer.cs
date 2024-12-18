@@ -9,7 +9,7 @@
             {
                 root.AddComponent<ConsoleComponent>();
             }
-            
+
             World.Instance.AddSingleton<NavmeshComponent>();
             
             int process = root.Fiber.Process;

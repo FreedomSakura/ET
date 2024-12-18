@@ -6,6 +6,7 @@
         "ET.MemoryPack",
         "ET.Recast",
         "ET.SourceGeneratorAttribute",
+        "ET.UnitCache",
         "ET.YooAssets",
         "Unity.Mathematics"
     ],

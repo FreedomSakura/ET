@@ -1,0 +1,22 @@
+{
+  "name": "cn.etetet.db",
+  "displayName": "ET.DB",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "description": "\u4e00\u4e2a\u7b80\u5355\u7684mongodb\u5c01\u88c5",
+  "author": {
+    "name": "tanghai",
+    "url": "https://github.com/egametang/ET"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egametang/ET"
+  },
+  "relatedPackages": {},
+  "dependencies": {
+    "cn.etetet.core": "2.0.8"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@ET-Packages"
+  }
+}

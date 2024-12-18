@@ -8,6 +8,7 @@
         "ET.Model",
         "ET.Recast",
         "ET.SourceGeneratorAttribute",
+        "ET.UnitCache",
         "Unity.Mathematics"
     ],
     "includePlatforms": [],
