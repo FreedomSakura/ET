@@ -1,7 +1,9 @@
 namespace ET.Server
 {
-    public class LRUNode : Entity, IAwake, IDestroy
+    [ChildOf(typeof(LRUCache))]
+    public class LRUNode : Entity, IAwake<long>, IDestroy
     {
-    
+        public long Key;
+        public int Frequency;
     }
 }

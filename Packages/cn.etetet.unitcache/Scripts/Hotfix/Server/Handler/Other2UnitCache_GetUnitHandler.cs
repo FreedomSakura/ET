@@ -1,6 +1,6 @@
 namespace ET.Server
 {
-    public class Other2UnitCache_GetUnitHandler
+    public static class Other2UnitCache_GetUnitHandler
     {
     
     }
