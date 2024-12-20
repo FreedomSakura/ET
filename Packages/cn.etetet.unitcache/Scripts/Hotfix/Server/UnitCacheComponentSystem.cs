@@ -39,7 +39,14 @@ namespace ET.Server
             }
             self.UnitCaches.Clear();
         }
+        
+        #region 对外接口
 
+        public static void CallCache(this UnitCacheComponent self, long id)
+        {
+            self.GetComponent<LRUCache>().Call(id);
+        }
+        
         public static async ETTask<Entity> Get(this UnitCacheComponent self, long unitId, string key)
         {
             UnitCache unitCache = default;
@@ -62,6 +69,7 @@ namespace ET.Server
             {
                 foreach (var entity in entityList)
                 {
+                    self.CallCache(id);
                     string key = entity.GetType().FullName;
                     UnitCache unitCache = default;
                     if (!self.UnitCaches.TryGetValue(key, out EntityRef<UnitCache> unitCacheRef))
@@ -98,5 +106,7 @@ namespace ET.Server
                 }
             }
         }
+        
+        #endregion
     }
 }
