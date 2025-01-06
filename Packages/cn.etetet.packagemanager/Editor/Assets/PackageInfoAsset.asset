@@ -60,7 +60,7 @@ MonoBehaviour:
   - Name: cn.etetet.recast
     Version: 2.0.0
   - Name: cn.etetet.proto
-    Version: 2.0.1
+    Version: 2.0.2
   - Name: cn.etetet.numeric
     Version: 2.0.0
   - Name: cn.etetet.netinner
@@ -176,5 +176,5 @@ MonoBehaviour:
   - Name: cn.etetet.packagemanager
     Version: 1.0.2
   BanPackageInfo: []
-  LastUpdateTime: 1733852775
+  LastUpdateTime: 1736174544
   UpdateInterval: 3600
