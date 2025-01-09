@@ -11,10 +11,10 @@ namespace ET.Client
 			root.GetComponent<ObjectWait>().Notify(new Wait_CreateMyUnit() {Message = message});
 			
 			// 测试Proto
-			Log.Console("测试Proto");
-			C2G_FirstProto msg = C2G_FirstProto.Create();
-			msg.Key = 1;
-			root.GetComponent<ClientSenderComponent>().Send(msg);
+			//Log.Console("测试Proto");
+			//C2G_FirstProto msg = C2G_FirstProto.Create();
+			//msg.Key = 1;
+			//root.GetComponent<ClientSenderComponent>().Send(msg);
 			
 			await ETTask.CompletedTask;
 		}
