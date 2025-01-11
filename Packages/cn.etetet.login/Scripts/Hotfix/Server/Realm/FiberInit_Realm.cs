@@ -15,7 +15,13 @@ namespace ET.Server
             root.AddComponent<MessageSender>();
             StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.Get(root.Fiber.Id);
             root.AddComponent<NetComponent, IKcpTransport>(new UdpTransport(startSceneConfig.InnerIPPort));
+            
+            root.AddComponent<DBManagerComponent>();
 
+            root.AddComponent<AccountSessionsComponent>();
+            root.AddComponent<TokenComponent>();
+            root.AddComponent<ServerInfoManagerComponent>();
+            
             await ETTask.CompletedTask;
         }
     }
