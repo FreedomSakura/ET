@@ -1,5 +1,4 @@
 using System;
-using Sirenix.OdinInspector;
 
 namespace ET.Server
 {
@@ -50,7 +49,10 @@ namespace ET.Server
         public static async ETTask SaveChange(this ET.Server.UnitDBSaveComponent self)
         {
             // 为啥这里是Mailbox的锁？
-            // 因为在MailBoxType_OrderedMessageHandler
+            // 因为在每个Unit上都有个MailBoxComponent，Unit要收发网络请求都靠它，所以MailBoxComponent相关的事件都是用来处理收发消息的过程的，
+            // MailBoxType_OrderedMessageHandler就是其中一环。在这里将会用一个类型为Mailbox，实例ID为其父级的Unit实例ID的协程锁来保证网络消息的正常收发
+            // UnitDBSaveComponent在保存改动到DB，也就是执行SaveChange函数时，同样要等待MailBoxType_OrderedMessageHandler，
+            // 这样做是为了保证在Mailbox处理完网络请求后我们才会将改动保存到DB。
             CoroutineLockComponent coroutineLockComponent = self.Root().GetComponent<CoroutineLockComponent>();
             using (await coroutineLockComponent.Wait(CoroutineLockType.Mailbox, self.GetParent<Unit>().InstanceId))
             {

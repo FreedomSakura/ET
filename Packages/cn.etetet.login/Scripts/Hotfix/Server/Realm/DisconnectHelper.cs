@@ -44,14 +44,14 @@
                         Log.Error($"离开Map游戏逻辑服时发生错误 : {m2GRequestExitGame.Error}");
                     }
                     
-                    //通知邮件服下线MailUnit
-                    Mail2G_ExistMailServer mail2GExistMailServer = (Mail2G_ExistMailServer)await player.Root().GetComponent<MessageLocationSenderComponent>()
-                                                                            .Get(LocationType.Mail).Call(player.UnitId,  G2Mail_ExistMailServer.Create());
-                    if (mail2GExistMailServer.Error != ErrorCode.ERR_Success)
-                    {
-                        Log.Error($"离开邮件中心服时发生错误 : {mail2GExistMailServer.Error}");
-                    }
-                    player.Root()?.GetComponent<MessageLocationSenderComponent>()?.Get(LocationType.Mail)?.Remove(player.UnitId);
+                    // //通知邮件服下线MailUnit
+                    // Mail2G_ExistMailServer mail2GExistMailServer = (Mail2G_ExistMailServer)await player.Root().GetComponent<MessageLocationSenderComponent>()
+                    //                                                         .Get(LocationType.Mail).Call(player.UnitId,  G2Mail_ExistMailServer.Create());
+                    // if (mail2GExistMailServer.Error != ErrorCode.ERR_Success)
+                    // {
+                    //     Log.Error($"离开邮件中心服时发生错误 : {mail2GExistMailServer.Error}");
+                    // }
+                    // player.Root()?.GetComponent<MessageLocationSenderComponent>()?.Get(LocationType.Mail)?.Remove(player.UnitId);
 
                     
                     //通知登录中心服移除账号角色登录信息

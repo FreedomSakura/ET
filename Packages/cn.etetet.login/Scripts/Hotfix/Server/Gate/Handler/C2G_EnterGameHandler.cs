@@ -119,13 +119,15 @@ namespace ET.Server
         {
 	        StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.GetBySceneName(player.Zone(), "Mail");
 	        
-	        G2Mail_LoginMailServer g2MailLoginMailServer = G2Mail_LoginMailServer.Create();
-	        g2MailLoginMailServer.UnitId = unit.Id;
-	        
-	        Mail2G_LoginMailServer mail2GGetMail = (Mail2G_LoginMailServer)await player.Root().GetComponent<MessageSender>()
-																							  .Call( startSceneConfig.ActorId,g2MailLoginMailServer);
-	        
-	        return mail2GGetMail.Error;
+	        // G2Mail_LoginMailServer g2MailLoginMailServer = G2Mail_LoginMailServer.Create();
+	        // g2MailLoginMailServer.UnitId = unit.Id;
+	        //
+	        // Mail2G_LoginMailServer mail2GGetMail = (Mail2G_LoginMailServer)await player.Root().GetComponent<MessageSender>()
+									// 														  .Call( startSceneConfig.ActorId,g2MailLoginMailServer);
+	        //
+	        // return mail2GGetMail.Error;
+	        await ETTask.CompletedTask;
+	        return 0;
         }
     }
 }

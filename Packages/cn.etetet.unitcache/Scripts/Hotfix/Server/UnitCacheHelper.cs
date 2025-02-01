@@ -4,6 +4,7 @@ namespace ET.Server
     {
         public static async ETTask<Unit> GetUnitCache(Scene s1, Scene s2, long unitId)
         {
+            await ETTask.CompletedTask;
 
             return null;
         }
