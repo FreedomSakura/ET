@@ -1,6 +1,11 @@
-namespace ET;
+using System;
 
-public class EventType
+namespace ET
 {
-    
+    public struct UnitGetComponent
+    {
+        public EntityRef<Unit> Unit;
+        public Type Type;
+    }
 }
+

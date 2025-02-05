@@ -42,8 +42,9 @@
                     }
 
                     var roleInfo = roleInfos[0];
+                    // 实体必须挂载实体树上，防止内存泄漏
                     session.AddChild(roleInfo);
-
+                    // 设置状态而不是删除，方便找回角色
                     roleInfo.State = (int)RoleInfoState.Freeze;
 
                     await dbComponent.Save(roleInfo);

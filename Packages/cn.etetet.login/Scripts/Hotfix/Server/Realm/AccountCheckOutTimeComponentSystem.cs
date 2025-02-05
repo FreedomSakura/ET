@@ -37,7 +37,7 @@ namespace ET.Server
             Session session = self.GetParent<Session>();
 
             Session originSession = session.Root().GetComponent<AccountSessionsComponent>().Get(self.Account);
-            if (originSession != null && session.InstanceId == originSession.InstanceId)
+            if (originSession != null && session.InstanceId == originSession.InstanceId) // 若是完全相同的Session，说明当前这个Session十分钟没操作过了！
             {
                 session.Root().GetComponent<AccountSessionsComponent>().Remove(self.Account);
             }
