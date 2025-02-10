@@ -11,4 +11,5 @@
 [304, {"_t":"StartSceneConfig","_id":304,"Process":1,"Zone":3,"SceneType":"Map","Name":"Map1","Port":0}],
 [305, {"_t":"StartSceneConfig","_id":305,"Process":1,"Zone":3,"SceneType":"Map","Name":"Map2","Port":0}],
 [401, {"_t":"StartSceneConfig","_id":401,"Process":1,"Zone":1000,"SceneType":"LoginCenter","Name":"LoginCenter","Port":40101}],
+[501, {"_t":"StartSceneConfig","_id":501,"Process":1,"Zone":3,"SceneType":"UnitCache","Name":"UnitCache1","Port":50101}],
 ]}

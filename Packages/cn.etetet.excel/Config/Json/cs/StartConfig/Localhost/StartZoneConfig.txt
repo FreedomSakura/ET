@@ -1,7 +1,7 @@
 {"dict": [
-[301, {"_t":"StartZoneConfig","_id":301,"ZoneType":1,"DBConnection":"mongodb://127.0.0.1","DBName":"ET1"}],
+[1, {"_t":"StartZoneConfig","_id":1,"ZoneType":1,"DBConnection":"mongodb://127.0.0.1","DBName":"ET1"}],
 [2, {"_t":"StartZoneConfig","_id":2,"ZoneType":2,"DBConnection":"mongodb://127.0.0.1","DBName":"ET2"}],
-[3, {"_t":"StartZoneConfig","_id":3,"ZoneType":3,"DBConnection":"","DBName":""}],
+[3, {"_t":"StartZoneConfig","_id":3,"ZoneType":3,"DBConnection":"mongodb://127.0.0.1","DBName":"ET3"}],
 [1000, {"_t":"StartZoneConfig","_id":1000,"ZoneType":1000,"DBConnection":"mongodb://127.0.0.1","DBName":"ET1000"}],
-[1, {"_t":"StartZoneConfig","_id":1,"ZoneType":1,"DBConnection":"mongodb://127.0.0.1","DBName":"ETGate301"}],
+[301, {"_t":"StartZoneConfig","_id":301,"ZoneType":3,"DBConnection":"mongodb://127.0.0.1","DBName":"ETGate301"}],
 ]}

@@ -27,6 +27,9 @@ namespace ET.Server
                 unitCache.key = key;
                 self.UnitCaches.Add(key, unitCache);
             }
+            
+            // 添加LRUCache
+            self.AddComponent<LRUCache>();
         }
         
         [EntitySystem]

@@ -87,7 +87,7 @@ namespace ET.Server
 						//Unit unit = UnitFactory.Create(scene, player.Id, UnitType.Player);
 						//long unitId = unit.Id;
 						
-						 (bool isNewPlayer, Unit unit) = await UnitLoadHelper.LoadUnit(player);
+						(bool isNewPlayer, Unit unit) = await UnitLoadHelper.LoadUnit(player);
 						 await LoginMailServer(player, unit);
 						long unitId = unit.Id;
 						

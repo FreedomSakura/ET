@@ -8,6 +8,14 @@ namespace ET.Server
 		public static StartSceneConfig GetGate(int zone, string account)
 		{
 			ulong hash = (ulong)account.GetLongHashCode();
+
+			// var cfg = StartSceneConfigCategory.Instance.Get(zone);
+			// if (cfg == null)
+			// {
+			// 	return null;
+			// }
+			//
+			// zone = cfg.Zone;
 			
 			List<StartSceneConfig> zoneGates = StartSceneConfigCategory.Instance.GetBySceneType(zone, SceneType.Gate);
 			

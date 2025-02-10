@@ -35,7 +35,7 @@ namespace ET.Server
 
             foreach (var info in serverInfoConfigs.Values)
             {
-                if (info.ZoneType != 1)
+                if (info.ZoneType != 3)
                 {
                     continue;
                 }
