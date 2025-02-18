@@ -84,6 +84,9 @@ namespace ET
         [MemoryPackOrder(3)]
         public List<byte[]> Entitys { get; set; } = new();
 
+        [MemoryPackOrder(4)]
+        public List<string> Types { get; set; } = new();
+
         public override void Dispose()
         {
             if (!this.IsFromPool)
@@ -95,6 +98,7 @@ namespace ET
             this.OldActorId = default;
             this.Unit = default;
             this.Entitys.Clear();
+            this.Types.Clear();
 
             ObjectPool.Recycle(this);
         }

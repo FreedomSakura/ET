@@ -20,16 +20,28 @@ namespace ET.Server
             // location加锁
             long unitId = unit.Id;
             
+            // 一定要将变动的数据存入库中 
+            unit.GetComponent<UnitDBSaveComponent>()?.SaveChangeNoWait();
+            
             M2M_UnitTransferRequest request = M2M_UnitTransferRequest.Create();
             request.OldActorId = unit.GetActorId();
             request.Unit = unit.ToBson();
-            foreach (Entity entity in unit.Components.Values)
+            
+            // 引入了缓存服，原本这套序列化+反序列化Unit上的组件的方案就过时了
+            // foreach (Entity entity in unit.Components.Values)
+            // {
+            //     if (entity is ITransfer)
+            //     {
+            //         request.Entitys.Add(entity.ToBson());
+            //     }
+            // }
+
+            foreach (var kv in unit.GetComponent<UnitDBSaveComponent>().Bytes)
             {
-                if (entity is ITransfer)
-                {
-                    request.Entitys.Add(entity.ToBson());
-                }
+                request.Types.Add(kv.Key.FullName);
+                request.Entitys.Add(kv.Value);
             }
+            
             unit.Dispose();
             
             await root.GetComponent<LocationProxyComponent>().Lock(LocationType.Unit, unitId, request.OldActorId);

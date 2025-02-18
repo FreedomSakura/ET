@@ -1,4 +1,6 @@
-﻿namespace ET.Server
+﻿using Unity.Mathematics;
+
+namespace ET.Server
 {
     public static class UnitLoadHelper
     {
@@ -14,6 +16,13 @@
             {
                 unit = UnitFactory.Create(gateMapComponent.Scene, player.UnitId, UnitType.Player );
                 unit.AddComponent<UnitDBSaveComponent>();
+                
+                // 初始化Unit位置
+                unit.Position = new float3(-10, 0, -10);
+                
+                // 数值同步组件
+                
+                
             
                 UnitCacheHelper.AddOrUpdateUnitAllCache(unit);
             }
