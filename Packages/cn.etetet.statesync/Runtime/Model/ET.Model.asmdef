@@ -2,13 +2,15 @@
     "name": "ET.Model",
     "rootNamespace": "ET",
     "references": [
+        "",
         "ET.Core",
         "ET.MemoryPack",
         "ET.Recast",
         "ET.SourceGeneratorAttribute",
         "ET.UnitCache",
         "ET.YooAssets",
-        "Unity.Mathematics"
+        "Unity.Mathematics",
+        "Unity.InputSystem"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -21,8 +23,5 @@
         "IS_COMPILING || UNITY_EDITOR"
     ],
     "versionDefines": [],
-    "noEngineReferences": true,
-    "optionalUnityReferences": [],
-    "additionalReferences": [],
-    "compilerOptions": ""
+    "noEngineReferences": true
 }

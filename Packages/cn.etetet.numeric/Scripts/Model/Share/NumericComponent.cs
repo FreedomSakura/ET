@@ -98,8 +98,9 @@ namespace ET
     }
 
     [ComponentOf(typeof (Unit))]
-    public class NumericComponent: Entity, IAwake, ITransfer
+    public class NumericComponent: Entity, IAwake, ITransfer, IUnitCache
     {
+        // 这个属性是为了能将字典变量存入MongoDB中用的
         [BsonDictionaryOptions(DictionaryRepresentation.ArrayOfArrays)]
         public Dictionary<int, long> NumericDic = new Dictionary<int, long>();
 

@@ -20,81 +20,81 @@ MonoBehaviour:
   - Name: cn.etetet.yooassets
     Version: 2.1.4
   - Name: cn.etetet.yiuiyooassets
-    Version: 0.7.2
+    Version: 1.0.0
   - Name: cn.etetet.yiuitips
-    Version: 0.7.2
+    Version: 1.0.0
   - Name: cn.etetet.yiuireddot
-    Version: 0.7.2
+    Version: 1.0.0
   - Name: cn.etetet.yiuiloopscrollrectasync
-    Version: 0.7.2
+    Version: 1.0.0
   - Name: cn.etetet.yiuilocalization
-    Version: 0.7.2
+    Version: 1.0.0
   - Name: cn.etetet.yiuiinvoke
     Version: 3.0.0
   - Name: cn.etetet.yiuigm
-    Version: 0.7.2
+    Version: 1.0.0
   - Name: cn.etetet.yiuiframework
-    Version: 0.7.2
+    Version: 1.0.0
   - Name: cn.etetet.yiuieffect
-    Version: 0.7.2
+    Version: 1.0.0
   - Name: cn.etetet.yiui3ddisplay
-    Version: 0.7.2
+    Version: 1.0.0
   - Name: cn.etetet.yiui
     Version: 
   - Name: cn.etetet.watcher
-    Version: 2.0.0
+    Version: 3.0.0
   - Name: cn.etetet.unitcache
     Version: 
   - Name: cn.etetet.unit
-    Version: 2.0.0
+    Version: 3.0.0
   - Name: cn.etetet.ui
-    Version: 2.0.0
+    Version: 3.0.0
   - Name: cn.etetet.startconfig
-    Version: 2.0.1
+    Version: 3.0.0
   - Name: cn.etetet.sourcegenerator
-    Version: 0.0.7
+    Version: 3.0.0
   - Name: cn.etetet.router
-    Version: 2.0.1
+    Version: 3.0.0
   - Name: cn.etetet.referencecollector
-    Version: 2.0.0
+    Version: 3.0.0
   - Name: cn.etetet.recast
-    Version: 2.0.0
+    Version: 3.0.0
   - Name: cn.etetet.proto
-    Version: 2.0.2
+    Version: 3.0.0
   - Name: cn.etetet.numeric
-    Version: 2.0.0
+    Version: 3.0.0
   - Name: cn.etetet.netinner
-    Version: 2.0.1
+    Version: 3.0.0
   - Name: cn.etetet.move
-    Version: 2.0.0
+    Version: 3.0.0
   - Name: cn.etetet.memorypack
     Version: 1.10.0
   - Name: cn.etetet.mathematics
     Version: 0.0.2
   - Name: cn.etetet.login
-    Version: 2.0.1
+    Version: 3.0.0
   - Name: cn.etetet.loader
-    Version: 2.0.7
+    Version: 3.0.0
   - Name: cn.etetet.hybridclr
     Version: 6.7.1
   - Name: cn.etetet.http
-    Version: 2.0.0
+    Version: 3.0.0
   - Name: cn.etetet.excel
-    Version: 2.0.0
+    Version: 3.0.0
   - Name: cn.etetet.demores
-    Version: 0.0.2
+    Version: 3.0.0
   - Name: cn.etetet.db
     Version: 1.0.0
   - Name: cn.etetet.core
-    Version: 2.0.8
+    Version: 3.0.2
   - Name: cn.etetet.console
-    Version: 2.0.0
+    Version: 3.0.0
   - Name: cn.etetet.aoi
-    Version: 2.0.0
+    Version: 3.0.0
   - Name: cn.etetet.ai
-    Version: 2.0.1
+    Version: 3.0.0
   - Name: cn.etetet.actorlocation
-    Version: 2.0.1
+    Version: 3.0.0
   - Name: com.unity.modules.wind
     Version: 1.0.0
   - Name: com.unity.modules.video
@@ -154,13 +154,13 @@ MonoBehaviour:
   - Name: com.unity.ugui
     Version: 3.0.0-exp.4
   - Name: com.unity.timeline
-    Version: 1.8.7
+    Version: 1.8.8
   - Name: com.unity.textmeshpro
     Version: 4.0.0-pre.2
   - Name: com.unity.render-pipelines.universal
     Version: 14.0.9
   - Name: com.unity.inputsystem
-    Version: 1.11.2
+    Version: 1.13.1
   - Name: com.unity.ide.vscode
     Version: 1.2.5
   - Name: com.unity.ide.visualstudio
@@ -168,13 +168,13 @@ MonoBehaviour:
   - Name: com.unity.ide.rider
     Version: 3.0.34
   - Name: com.unity.ai.navigation
-    Version: 2.0.5
+    Version: 2.0.6
   - Name: cn.etetet.yiuistatesync
-    Version: 0.7.2
+    Version: 1.0.0
   - Name: cn.etetet.statesync
-    Version: 2.0.11
+    Version: 3.0.4
   - Name: cn.etetet.packagemanager
     Version: 1.0.2
   BanPackageInfo: []
-  LastUpdateTime: 1736174544
+  LastUpdateTime: 1740575855
   UpdateInterval: 3600

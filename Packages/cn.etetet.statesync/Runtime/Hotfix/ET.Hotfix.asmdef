@@ -2,6 +2,7 @@
     "name": "ET.Hotfix",
     "rootNamespace": "ET",
     "references": [
+        "",
         "ET.Core",
         "ET.Loader",
         "ET.MemoryPack",
@@ -9,7 +10,8 @@
         "ET.Recast",
         "ET.SourceGeneratorAttribute",
         "ET.UnitCache",
-        "Unity.Mathematics"
+        "Unity.Mathematics",
+        "Unity.InputSystem"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -22,8 +24,5 @@
         "IS_COMPILING || UNITY_EDITOR"
     ],
     "versionDefines": [],
-    "noEngineReferences": true,
-    "optionalUnityReferences": [],
-    "additionalReferences": [],
-    "compilerOptions": ""
+    "noEngineReferences": true
 }

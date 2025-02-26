@@ -132,6 +132,12 @@
         "cn.etetet.unit": "2.0.0"
       }
     },
+    "cn.etetet.numericnotice": {
+      "version": "file:cn.etetet.numericnotice",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "cn.etetet.packagemanager": {
       "version": "file:cn.etetet.packagemanager",
       "depth": 0,

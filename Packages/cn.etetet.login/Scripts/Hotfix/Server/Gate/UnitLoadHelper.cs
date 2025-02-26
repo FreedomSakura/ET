@@ -16,14 +16,7 @@ namespace ET.Server
             {
                 unit = UnitFactory.Create(gateMapComponent.Scene, player.UnitId, UnitType.Player );
                 unit.AddComponent<UnitDBSaveComponent>();
-                
-                // 初始化Unit位置
-                unit.Position = new float3(-10, 0, -10);
-                
-                // 数值同步组件
-                
-                
-            
+
                 UnitCacheHelper.AddOrUpdateUnitAllCache(unit);
             }
             else
